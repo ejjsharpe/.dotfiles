@@ -1,23 +1,12 @@
 # Dotfiles
 
-This repository contains my dotfiles, which are managed and synchronized using GNU Stow.
-
-## Requirements
-
-- [GNU Stow](https://www.gnu.org/software/stow/) - Install using your package manager:
+This repo contains my dotfiles. For a full setup run the following script:
 
   ```bash
-  # For Debian/Ubuntu
-  sudo apt-get install stow
-
-  # For macOS (with Homebrew)
-  brew install stow
+  cd && git clone https://github.com/ejjsharpe/.dotfiles.git && ./dotfiles/setup.sh
   ```
 
-## Usage
-
+To sync individual packages you can use stow e.g:
   ```bash
-  git clone https://github.com/ejjsharpe/.dotfiles.git
-  cd .dotfiles
-  stow *
+  stow nvim zsh
   ```
