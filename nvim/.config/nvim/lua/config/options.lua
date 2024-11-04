@@ -1,7 +1,7 @@
 local opt = vim.opt
 
 -- theme
-vim.cmd("colorscheme onedark")
+vim.cmd.colorscheme("tokyonight-moon")
 
 -- Line numbers
 opt.number = true
