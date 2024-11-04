@@ -49,5 +49,3 @@ opt.cursorline = true
 
 -- Dont let more than 10 lines go off unless its the end of the pages
 opt.scrolloff = 10
-
-opt.laststatus = 3
