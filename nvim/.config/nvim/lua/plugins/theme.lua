@@ -1,3 +1,4 @@
 return {
-	"sam4llis/nvim-tundra",
+	"olimorris/onedarkpro.nvim",
+	priority = 1000, 
 }

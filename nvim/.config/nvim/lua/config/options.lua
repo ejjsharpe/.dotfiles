@@ -1,9 +1,7 @@
 local opt = vim.opt
 
 -- theme
-vim.g.tundra_biome = "arctic"
-opt.background = "dark"
-vim.cmd("colorscheme tundra")
+vim.cmd("colorscheme onedark")
 
 -- Line numbers
 opt.number = true
