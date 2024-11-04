@@ -44,3 +44,7 @@ map("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "Focus file tree" })
 
 -- Diff View
 map("n", "<leader>gd", "<cmd>DiffviewToggle<CR>", { desc = "Git diff view" })
+
+-- Barbar
+map("n", "<Tab>", "<Cmd>BufferNext<CR>", { desc = "Next buffer" })
+map("n", "<leader>x", "<Cmd>BufferClose<CR>", { desc = "Close buffer" })
