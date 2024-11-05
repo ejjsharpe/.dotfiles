@@ -1,4 +1,5 @@
 local opt = vim.opt
+local o = vim.o
 
 -- theme
 vim.cmd.colorscheme("tokyonight-moon")
@@ -49,3 +50,10 @@ opt.cursorline = true
 
 -- Dont let more than 10 lines go off unless its the end of the pages
 opt.scrolloff = 10
+
+-- Indenting
+o.expandtab = true
+o.shiftwidth = 2
+o.smartindent = true
+o.tabstop = 2
+o.softtabstop = 2
