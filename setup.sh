@@ -33,6 +33,24 @@ else
   echo "Powerlevel10k is already installed."
 fi
 
+# Install NVM if not installed
+if [ ! -d "$HOME/.nvm" ]; then
+  echo "Installing NVM..."
+  brew install nvm
+
+  # Ensure NVM is properly set up
+  mkdir -p "$HOME/.nvm"
+  {
+    echo 'export NVM_DIR="$HOME/.nvm"'
+    echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"'
+    echo '[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"'
+  } >> "$HOME/.zshrc"
+
+  echo "NVM installed. Restart your terminal or run 'source ~/.zshrc' to apply changes."
+else
+  echo "NVM is already installed."
+fi
+
 # Use Stow to link all dotfiles
 echo "Syncing dotfiles with Stow..."
 cd "$DOTFILES_DIR"
